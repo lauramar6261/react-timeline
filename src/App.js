@@ -6,22 +6,22 @@ import Timeline from './components/Timeline';
 import TimelineEvent from './components/TimelineEvent';
 
 
-const data = [
-  {
-    name: 'laura',
-    status: 'hellow world',
-    timestamp: '2 days ago',
-  }
-]
+// const data = [
+//   {
+//     name: 'laura',
+//     status: 'hellow world',
+//     timestamp: '2 days ago',
+//   }
+// ]
 
 class App extends Component {
   render() {
-    console.log(timelineData);
-    const statusComponents = data.map((status) => {
+    console.log(timelineData.events);
+    const statusComponents = timelineData.events.map((status) => {
             return < TimelineEvent
-            name={status.name}
+            name={status.person}
             status={status.status}
-            timestamp={status.timestamp}
+            timestamp={status.timeStamp}
             key={status.name}/>
           });
     return (
