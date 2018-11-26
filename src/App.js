@@ -17,20 +17,13 @@ import TimelineEvent from './components/TimelineEvent';
 class App extends Component {
   render() {
     console.log(timelineData.events);
-    const statusComponents = timelineData.events.map((status) => {
-            return < TimelineEvent
-            name={status.person}
-            status={status.status}
-            timestamp={status.timeStamp}
-            key={status.person}/>
-          });
-    return (
+      return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Ada Lovelace's social media</h1>
         </header>
         <main className="App-main">
-        {statusComponents}
+        <Timeline data={timelineData} />
         </main>
       </div>
     );
