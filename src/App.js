@@ -38,31 +38,3 @@ class App extends Component {
 }
 
 export default App;
-
-//import React from 'react';
-// import React, { Component } from 'react';
-// import './TimelineEvent.css';
-// import Timestamp from './Timestamp';
-//
-//
-
-// class TimelineEvent extends Component {
-// //const TimelineEvent = () => {
-//   render() {
-//       const statusComponents = statusAll.map((status) => {
-//         return <Event
-//         name={status.name}
-//         status={status.status}
-//         timestamp={status.timestamp}
-//         key={status.name}/>
-//       });
-//
-//     return (
-//       <main className = "app">
-//       {statusComponents}
-//       </main>
-//     );
-//   }
-// }
-//
-// export default TimelineEvent;
