@@ -22,7 +22,7 @@ class App extends Component {
             name={status.person}
             status={status.status}
             timestamp={status.timeStamp}
-            key={status.name}/>
+            key={status.person}/>
           });
     return (
       <div className="App">
