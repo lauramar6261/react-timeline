@@ -1,8 +1,6 @@
-import React from 'react';
-import './TimelineEvent.css';
-import Timestamp from './Timestamp';
+import React, { Component } from 'react';
 
-const TimelineEvent = (props) => {
+const Status = (props) => {
   // Component functions always return JSX
   return (
   <section>
@@ -11,6 +9,6 @@ const TimelineEvent = (props) => {
     <h3>{props.timestamp}</h3>
   </section>
   );
-}
+};
 
-export default TimelineEvent;
+export default Status;
